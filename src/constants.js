@@ -44,7 +44,7 @@ import College from './assets/education_logo/College.jpg';
 import School from './assets/education_logo/School.jpeg';
 
 // Project Section Logo's
-import insta from './assets/work_logo/github_det.png';
+import insta from './assets/work_logo/instagram.jpg';
 import recipe from './assets/work_logo/Recipyfinder.jpg';
 import movierecLogo from './assets/work_logo/movie_rec.png';
 import expensetracker from './assets/work_logo/ExpenseTracker.jpg';
@@ -179,8 +179,8 @@ export const SkillsInfo = [
          "An Instagram Clone is a full-stack social media application that allows users to log in, create posts, like, comment, and interact with other users in a responsive and engaging interface",
       image: insta,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-      webapp: "https://githubprofiledetective.netlify.app/",
+      github: "https://github.com/Sakshi123-tech/Instagram_clone",
+      webapp: "",
     },
     {
       id: 1,
@@ -192,16 +192,16 @@ export const SkillsInfo = [
       github: "https://github.com/Sakshi123-tech/Recipe-finder-website/tree/master",
       webapp: "https://recipe-app-five-topaz.vercel.app/",
     },
-    {
-      id: 2,
-      title: "Movie Recommendation App",
-      description:
-        "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-      image: movierecLogo,
-      tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    },
+    // {
+    //   id: 2,
+    //   title: "Movie Recommendation App",
+    //   description:
+    //     "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
+    //   image: movierecLogo,
+    //   tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
+    //   github: "https://github.com/codingmastr/Movie-Recommendation-App",
+    //   webapp: "https://movie-recommendation-app-jet.vercel.app/",
+    // },
     {
       id: 3,
       title: "Valentine Day web Page",
