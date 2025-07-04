@@ -32,6 +32,7 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
+import blinkitwebsite from './assets/tech_logo/Blinkitwebsite.jpg'
 
 // Experience Section Logo's
 import Techpile from './assets/company_logo/Techpile.jpg';
@@ -77,8 +78,8 @@ export const SkillsInfo = [
     title: 'DataBase',
     skills: [
       // { name: 'Springboot', logo: springbootLogo },
-      // { name: 'Node JS', logo: nodejsLogo },
-      // { name: 'Express JS', logo: expressjsLogo },
+      { name: 'Node JS', logo: nodejsLogo },
+       { name: 'Express JS', logo: expressjsLogo },
       { name: 'MySQL', logo: mysqlLogo },
       { name: 'MongoDB', logo: mongodbLogo },
       // { name: 'Firebase', logo: firebaseLogo },
@@ -106,7 +107,7 @@ export const SkillsInfo = [
       { name: 'Postman', logo: postmanLogo },
       // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
-      // { name: 'Netlify', logo: netlifyLogo },
+       { name: 'Netlify', logo: netlifyLogo },
       // { name: 'Figma', logo: figmaLogo },
     ],
   },
@@ -172,18 +173,29 @@ export const SkillsInfo = [
   ];
   
   export const projects = [
-    {
+        {
       id: 0,
-      title: "Instagram Clone",
+      title: "Full Stack Blinkit Website",
+      description:
+         "A high-performance full-stack grocery delivery application inspired by Blinkit, built entirely on the MERN stack: MongoDB, Express.js, React, and Node.js.",
+      image: blinkitwebsite,
+      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
+      github: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
+      webapp: "https://blinkitwebsite.onrender.com/",
+    },
+
+    {
+      id: 1,
+      title: "Instagram Clone Full stack",
       description:
          "An Instagram Clone is a full-stack social media application that allows users to log in, create posts, like, comment, and interact with other users in a responsive and engaging interface",
       image: insta,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/Sakshi123-tech/Instagram_clone",
-      webapp: "",
+      github: "https://github.com/Sakshi123-tech/Insta_backend_code",
+      webapp: "https://instagram-website-j8gw.onrender.com/",
     },
     {
-      id: 1,
+      id: 2,
       title: "Recipe Finder Website",
       description:
         "The Recipe Finder website is a dynamic platform that helps users discover and explore recipes based on ingredients they have. It simplifies meal planning by offering tailored recipe suggestions.",
