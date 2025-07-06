@@ -181,7 +181,7 @@ export const SkillsInfo = [
       image: blinkitwebsite,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
       github: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
-      webapp: "https://blinkitwebsite.onrender.com/",
+      webapp: "https://blinkitgrocerywebsite.onrender.com/",
     },
 
     {
