@@ -175,6 +175,16 @@ export const SkillsInfo = [
   export const projects = [
         {
       id: 0,
+      title: "Full Stack car rentel Website",
+      description:
+         "A full-featured car rental platform built with MongoDB, Express.js, React, and Node.js, enabling users to browse, book, and manage vehicles seamlessly.",
+      image: blinkitwebsite,
+      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
+      github: "https://github.com/Sakshi123-tech?tab=repositories",
+      webapp: "https://carrentel-7fto.onrender.com/",
+    },
+        {
+      id: 1,
       title: "Full Stack Blinkit Website",
       description:
          "A high-performance full-stack grocery delivery application inspired by Blinkit, built entirely on the MERN stack: MongoDB, Express.js, React, and Node.js.",
@@ -185,7 +195,7 @@ export const SkillsInfo = [
     },
 
     {
-      id: 1,
+      id: 2,
       title: "Instagram Clone Full stack",
       description:
          "An Instagram Clone is a full-stack social media application that allows users to log in, create posts, like, comment, and interact with other users in a responsive and engaging interface",
@@ -195,7 +205,7 @@ export const SkillsInfo = [
       webapp: "https://instagram-website-j8gw.onrender.com/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Recipe Finder Website",
       description:
         "The Recipe Finder website is a dynamic platform that helps users discover and explore recipes based on ingredients they have. It simplifies meal planning by offering tailored recipe suggestions.",
@@ -215,7 +225,7 @@ export const SkillsInfo = [
     //   webapp: "https://movie-recommendation-app-jet.vercel.app/",
     // },
     {
-      id: 3,
+      id: 4,
       title: "Valentine Day web Page",
       description:
         "The Valentine's Day Special Website is a personalized web experience designed to celebrate love and togetherness. It allows users to create and share heartfelt messages, relationship milestones, and special moments in a beautifully themed interface.",
@@ -225,7 +235,7 @@ export const SkillsInfo = [
       webapp: "https://sprightly-paletas-d76b7d.netlify.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Expense Tracker",
       description:
         "The Expense Tracker is a web application designed to help users manage and track their finances efficiently. It allows users to log expenses, categorize transactions, and visualize spending patterns.",
@@ -235,7 +245,7 @@ export const SkillsInfo = [
       webapp: "https://euphonious-madeleine-c71886.netlify.app/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Ecommerce Website",
       description:
         "The E-commerce Website is a dynamic online shopping platform that allows users to browse, purchase, and manage orders seamlessly. It offers a modern shopping experience with secure transactions and a user-friendly interface..",
@@ -245,7 +255,7 @@ export const SkillsInfo = [
       webapp: "https://dazzling-shortbread-3d3f4d.netlify.app/",
     },
     {
-      id: 6,
+      id: 7,
       title: "10 Min Zepto",
       description:
         "The 10-Min Zepto is a rapid delivery e-commerce platform that enables users to order groceries and essentials with guaranteed delivery within 10 minutes. This project integrates real-time order processing, inventory management, and location-based logistics.",
@@ -255,7 +265,7 @@ export const SkillsInfo = [
       webapp: "https://codingmasterweb.in/",
     },
     {
-      id: 7,
+      id: 8,
       title: "Heart Care Website",
       description:
         "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
@@ -265,7 +275,7 @@ export const SkillsInfo = [
       webapp: "https://imagsearch.netlify.app/",
     },
     {
-      id: 8,
+      id: 9,
       title: "Password Manager",
       description:
         "The Password Manager is a secure web application designed to help users store, manage, and retrieve passwords safely. It ensures encrypted storage, allowing users to access their credentials anytime while maintaining security.",
