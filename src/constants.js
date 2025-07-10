@@ -46,6 +46,7 @@ import School from './assets/education_logo/School.jpeg';
 
 // Project Section Logo's
 import insta from './assets/work_logo/instagram.jpg';
+import carrentel from './assets/work_logo/car rentel.png';
 import recipe from './assets/work_logo/Recipyfinder.jpg';
 import movierecLogo from './assets/work_logo/movie_rec.png';
 import expensetracker from './assets/work_logo/ExpenseTracker.jpg';
@@ -53,6 +54,7 @@ import valentine from './assets/work_logo/Valentineday.jpg';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
 import zepto from './assets/work_logo/10MinZepto.jpg';
 import heartcare from './assets/work_logo/Hearcare.jpg';
+
 import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
 
 
@@ -178,7 +180,7 @@ export const SkillsInfo = [
       title: "Full Stack car rentel Website",
       description:
          "A full-featured car rental platform built with MongoDB, Express.js, React, and Node.js, enabling users to browse, book, and manage vehicles seamlessly.",
-      image: blinkitwebsite,
+      image: carrentel,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
       github: "https://github.com/Sakshi123-tech?tab=repositories",
       webapp: "https://carrentel-7fto.onrender.com/",
