@@ -204,7 +204,7 @@ export const SkillsInfo = [
       image: insta,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API"],
       github: "https://github.com/Sakshi123-tech/Insta_backend_code",
-      webapp: "https://instagram-website-j8gw.onrender.com/",
+      webapp: "https://instagram-website-j8gw.onrender.com/login",
     },
     {
       id: 3,
