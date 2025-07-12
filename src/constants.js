@@ -54,6 +54,7 @@ import valentine from './assets/work_logo/Valentineday.jpg';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
 import zepto from './assets/work_logo/10MinZepto.jpg';
 import heartcare from './assets/work_logo/Hearcare.jpg';
+import ImageSearchwebsite from './assets/work_logo/searchimage.png';
 
 import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
 
@@ -264,26 +265,36 @@ export const SkillsInfo = [
       image: zepto,
       tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
       github: "https://github.com/Sakshi123-tech/blinkit",
-      webapp: "https://codingmasterweb.in/",
+      webapp: "",
     },
     {
       id: 8,
+      title: "Image Search Website",
+      description:
+        "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
+      image: ImageSearchwebsite,
+      tags: ["Html","CSS","Javascript", "API ", "React Js"],
+      github: "https://github.com/Sakshi123-tech/image_search_app",
+      webapp: "https://imagsearch.netlify.app/",
+    },
+     {
+      id: 9,
       title: "Heart Care Website",
       description:
         "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
       image: heartcare,
       tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
       github: "https://github.com/Sakshi123-tech/healthcare",
-      webapp: "https://imagsearch.netlify.app/",
+      webapp: "",
     },
     {
-      id: 9,
+      id: 10,
       title: "Password Manager",
       description:
         "The Password Manager is a secure web application designed to help users store, manage, and retrieve passwords safely. It ensures encrypted storage, allowing users to access their credentials anytime while maintaining security.",
       image: passwordmanager,
       tags: ["React JS","HTML", "CSS", "Javascript"],
       github: "https://github.com/Sakshi123-tech/password-manager",
-      webapp: "https://removeyourbg.netlify.app/",
+      webapp: "",
     },
   ];  
