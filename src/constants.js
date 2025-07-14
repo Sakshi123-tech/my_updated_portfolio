@@ -184,7 +184,7 @@ export const SkillsInfo = [
       image: carrentel,
       tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
       github: "https://github.com/Sakshi123-tech?tab=repositories",
-      webapp: "https://carrentel-7fto.onrender.com/",
+      webapp: "https://car-rentel-frontend-code.vercel.app/",
     },
         {
       id: 1,
