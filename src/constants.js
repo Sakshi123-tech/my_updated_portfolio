@@ -38,6 +38,8 @@ import valentine from './assets/work_logo/valentine.png';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
 import zepto from './assets/work_logo/10MinZepto.jpg';
 import heartcare from './assets/work_logo/Hearcare.jpg';
+import ImageSearchwebsite from './assets/work_logo/searchimage.png';
+
 import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
 import carrentel from "./assets/work_logo/car rentel.png";
 
