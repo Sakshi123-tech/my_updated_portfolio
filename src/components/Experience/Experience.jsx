@@ -1,96 +1,99 @@
-import React from "react";
-import { experiences } from "../../constants"; // Import your data
+import React from 'react';
+import { motion } from 'framer-motion';
+import { experiences } from '../../constants';
 
-const Experience = () => {
-  return (
-    <section
-      id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
-    >
-      {/* Section Title */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
-          A collection of my work experience and the roles I have taken in Company As a Trainer in Techpile Technology Private limited
- 
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] } },
+};
+
+const Experience = () => (
+  <section id="experience" className="relative py-24 px-6 md:px-10 lg:px-16 overflow-hidden">
+    {/* Aurora bg */}
+    <div className="absolute inset-0 bg-gradient-to-t from-indigo-50 via-white to-purple-50 pointer-events-none" />
+    <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+      style={{ background: 'radial-gradient(circle, rgba(79,70,229,0.1) 0%, transparent 70%)', filter: 'blur(80px)' }} />
+
+    <div className="relative max-w-5xl mx-auto">
+      {/* Header */}
+      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+        className="text-center mb-16">
+        <p className="section-tag mb-3">Career Journey</p>
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+        <div className="section-divider mx-auto" />
+        <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+          From full-stack training to engineering production systems at enterprise companies.
         </p>
-      </div>
+      </motion.div>
 
-      {/* Experience Timeline */}
+      {/* Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+        <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px md:-translate-x-px"
+          style={{ background: 'linear-gradient(180deg, transparent, rgba(124,58,237,0.35) 10%, rgba(79,70,229,0.35) 90%, transparent)' }} />
 
-        {/* Experience Entries */}
-        {experiences.map((experience, index) => (
-          <div
-            key={experience.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
-            }`}
+        {experiences.map((exp, i) => (
+          <motion.div key={exp.id}
+            variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-60px' }}
+            custom={i}
+            className={`relative flex flex-col md:flex-row items-start mb-12 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
           >
-            {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
-              <img
-                src={experience.img}
-                alt={experience.company}
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
+            {/* Dot on timeline */}
+            <div className="absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full border-2 border-purple-400 bg-white shadow-md shadow-purple-100 z-10 mt-1" />
 
-            {/* Content Section */}
-            <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
-            >
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
-                  <img
-                    src={experience.img}
-                    alt={experience.company}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Role, Company Name, and Date */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                      {experience.role}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {experience.company}
-                    </h4>
+            {/* Content card */}
+            <div className={`ml-14 md:ml-0 md:w-[46%] ${i % 2 === 0 ? 'md:pr-10' : 'md:pl-10'}`}>
+              <motion.div whileHover={{ y: -4 }}
+                className="glass-card rounded-2xl p-6 cursor-default">
+                {/* Company header */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-white border border-gray-100 shadow-sm overflow-hidden flex-shrink-0">
+                    <img src={exp.img} alt={exp.company} className="w-full h-full object-contain p-1" />
                   </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-base leading-snug">{exp.role}</h3>
+                    <p className="text-purple-600 font-medium text-sm">{exp.company}</p>
+                    <p className="text-gray-400 text-xs mt-0.5 font-mono">{exp.date}</p>
+                  </div>
                 </div>
-              </div>
 
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
-              <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
-                <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, index) => (
-                    <li
-                      key={index}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
-                    >
-                      {skill}
-                    </li>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{exp.desc}</p>
+
+                {/* Impact metrics */}
+                {exp.impact && exp.impact.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {exp.impact.map((m, idx) => (
+                      <div key={idx} className="flex flex-col items-center px-3 py-1.5 rounded-lg bg-purple-50 border border-purple-100">
+                        <span className="text-lg font-bold gradient-text leading-none">{m.metric}</span>
+                        <span className="text-xs text-gray-500 mt-0.5">{m.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Skills */}
+                <div className="flex flex-wrap gap-1.5">
+                  {exp.skills.map((sk, idx) => (
+                    <span key={idx}
+                      className="px-2.5 py-1 rounded-lg text-xs font-medium bg-indigo-50 text-indigo-600 border border-indigo-100">
+                      {sk}
+                    </span>
                   ))}
-                </ul>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Date bubble on opposite side (desktop) */}
+            <div className={`hidden md:flex md:w-[46%] items-start ${i % 2 === 0 ? 'md:pl-10' : 'md:pr-10 md:justify-end'}`}>
+              <div className="px-4 py-2 rounded-xl bg-white border border-purple-100 shadow-sm text-sm font-mono text-purple-600 mt-1">
+                {exp.date}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Experience;

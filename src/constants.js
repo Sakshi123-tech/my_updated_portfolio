@@ -1,277 +1,313 @@
 // Skills Section Logo's
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
-import sassLogo from './assets/tech_logo/sass.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
-import angularLogo from './assets/tech_logo/angular.png';
 import reduxLogo from './assets/tech_logo/redux.png';
 import nextjsLogo from './assets/tech_logo/nextjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import gsapLogo from './assets/tech_logo/gsap.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
-import bootstrapLogo from './assets/tech_logo/bootstrap.png';
 import springbootLogo from './assets/tech_logo/springboot.png';
 import nodejsLogo from './assets/tech_logo/nodejs.png';
 import expressjsLogo from './assets/tech_logo/express.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
-import firebaseLogo from './assets/tech_logo/firebase.png';
 import cLogo from './assets/tech_logo/c.png';
-import cppLogo from './assets/tech_logo/cpp.png';
 import javaLogo from './assets/tech_logo/java.png';
-import pythonLogo from './assets/tech_logo/python.png';
-import typescriptLogo from './assets/tech_logo/typescript.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
-import mcLogo from './assets/tech_logo/mc.png';
-import figmaLogo from './assets/tech_logo/figma.png';
-import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import postgreLogo from './assets/tech_logo/postgre.png';
-import csharpLogo from './assets/tech_logo/csharp.png';
-import blinkitwebsite from './assets/tech_logo/Blinkitwebsite.jpg'
+import dockerLogo from './assets/tech_logo/vscode.png'; // fallback
+import blinkitwebsite from './assets/tech_logo/Blinkitwebsite.jpg';
 
 // Experience Section Logo's
 import Techpile from './assets/company_logo/Techpile.jpg';
-import agcLogo from './assets/company_logo/agc_logo.png';
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import Coreshield from './assets/company_logo/Coreshield.png';
+import TechMahindraLogo from './assets/company_logo/techmahindra.png';
 
 // Education Section Logo's
-// import glaLogo from './assets/education_logo/gla_logo.png';
 import College from './assets/education_logo/College.jpg';
-import School from './assets/education_logo/School.jpeg';
+import School from './assets/education_logo/school.jpeg';
 
 // Project Section Logo's
 import insta from './assets/work_logo/instagram.jpg';
-import recipe from './assets/work_logo/Recipyfinder.jpg';
-import movierecLogo from './assets/work_logo/movie_rec.png';
+import recipe from './assets/work_logo/RecipeApp.png';
 import expensetracker from './assets/work_logo/ExpenseTracker.jpg';
-import valentine from './assets/work_logo/Valentineday.jpg';
+import valentine from './assets/work_logo/valentine.png';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
 import zepto from './assets/work_logo/10MinZepto.jpg';
 import heartcare from './assets/work_logo/Hearcare.jpg';
 import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
+import carrentel from "./assets/work_logo/car rentel.png";
 
 
 export const SkillsInfo = [
   {
-    title: 'Frontend',
+    title: 'Core Languages',
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      // { name: 'SASS', logo: sassLogo },
       { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
-      // { name: 'Angular', logo: angularLogo },
-      { name: 'Redux', logo: reduxLogo },
-      // { name: 'Next JS', logo: nextjsLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      // { name: 'GSAP', logo: gsapLogo },
-      // { name: 'Material UI', logo: materialuiLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
-    ],
-  },
-  {
-    title: 'DataBase',
-    skills: [
-      // { name: 'Springboot', logo: springbootLogo },
-      { name: 'Node JS', logo: nodejsLogo },
-       { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
-      { name: 'MongoDB', logo: mongodbLogo },
-      // { name: 'Firebase', logo: firebaseLogo },
-      // { name: 'PostgreSQL', logo: postgreLogo },
-    ],
-  },
-  {
-    title: 'Languages',
-    skills: [
+      { name: 'Java', logo: javaLogo },
       { name: 'C', logo: cLogo },
-      // { name: 'C++', logo: cppLogo },
-      // { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      // { name: 'C-Sharp', logo: csharpLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      // { name: 'TypeScript', logo: typescriptLogo },
+      { name: 'HTML5', logo: htmlLogo },
+      { name: 'CSS3', logo: cssLogo },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Frameworks & Runtime',
+    skills: [
+      { name: 'React.js', logo: reactjsLogo },
+      { name: 'Node.js', logo: nodejsLogo },
+      { name: 'Express.js', logo: expressjsLogo },
+      { name: 'Next.js', logo: nextjsLogo },
+      { name: 'Redux', logo: reduxLogo },
+      { name: 'Tailwind CSS', logo: tailwindcssLogo },
+    ],
+  },
+  {
+    title: 'Databases & Storage',
+    skills: [
+      { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'MySQL', logo: mysqlLogo },
+    ],
+  },
+  {
+    title: 'DevOps & Tools',
     skills: [
       { name: 'Git', logo: gitLogo },
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Postman', logo: postmanLogo },
-      // { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
-       { name: 'Netlify', logo: netlifyLogo },
-      // { name: 'Figma', logo: figmaLogo },
     ],
   },
 ];
 
-  export const experiences = [
-    {
-      id: 0,
-      img: Techpile,
-      role: "Fullstack Developer As a Trainer",
-      company: "Techpile Technology Pvt Ltd.",
-      date: "july 2023 - september 2023",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
-      skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Django Pyhton",
-        "CSS",
-        
-      ],
-    },
-    
-  ];
-  
-  export const education = [
-    // {
-    //   id: 0,
-    //   img: glaLogo,
-    //   school: "GLA University, Mathura",
-    //   date: "Sept 2022 - July 2024",
-    //   grade: "7.81 CGPA",
-    //   desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-    //   degree: "Master of Computer Applications - MCA",
-    // },
-    {
-      id: 1,
-      img: College,
-      school: "M.G.Institute of Management and Technology",
-      date: "August 2020-june 2024",
-      grade: "8.36 Cgpa",
-      desc: "I completed my Bachelor's degree in Computer Science and Engineering  from M.G.I.M.T. College, Lucknow. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at M.G.I.M.T. College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of  Computer Science  and Engineering",
-    },
-    {
-      id: 2,
-      img: School,
-      school: "Shri Janki Prasad Inter College Patseni Kachhauna Hardoi",
-      date: "Apr 2018 - March 2020",
-      grade: "70%",
-      desc: "I completed my class 12 education from Shri Janki Prasad Inter College Patseni Kachhauna Hardoi, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "U.P.Board(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: School,
-      school: "Shri Janki Prasad Inter College Patseni Kachhauna Hardoi",
-      date: "Apr 2016 - March 2018",
-      grade: "75%",
-      desc: "I completed my class 10 education from Shri Janki Prasad Inter College Patseni Kachhauna Hardoi, where I studied Science with Computer.",
-      degree: "U.P.Board(X), Science with Computer Application",
-    },
-  ];
-  
-  export const projects = [
-        {
-      id: 0,
-      title: "Full Stack Blinkit Website",
-      description:
-         "A high-performance full-stack grocery delivery application inspired by Blinkit, built entirely on the MERN stack: MongoDB, Express.js, React, and Node.js.",
-      image: blinkitwebsite,
-      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API","MongoDb","Expressjs","Node js"],
-      github: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
-      webapp: "https://blinkitwebsite.onrender.com/",
-    },
+export const experiences = [
+  {
+    id: 0,
+    img: Coreshield,
+    role: "Software Development Engineer (SDE)",
+    company: "Coreshield Technologies",
+    date: "August 2025 – Present",
+    desc: "Lead end-to-end development of production-grade web applications using React.js and Node.js. Architect scalable REST APIs and implement OWASP Top 10 security standards including XSS prevention and secure JWT authentication. Integrated Socket.IO for real-time data sync, reducing latency by 35%. Containerized services with Docker and applied Low Level Design (LLD) principles improving maintainability and reducing bug surface by 40%. Improved page performance by 25% through code splitting, lazy loading, and bundle optimization.",
+    skills: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "REST APIs",
+      "Docker",
+      "JWT Auth",
+      "OWASP Security",
+      "LLD",
+      "Performance Optimization",
+    ],
+    impact: [
+      { metric: "25%", label: "Performance Gain" },
+      { metric: "35%", label: "Latency Reduced" },
+      { metric: "40%", label: "Bug Reduction" },
+    ],
+  },
+  {
+    id: 1,
+    img: TechMahindraLogo,
+    role: "Software Development Intern",
+    company: "Tech Mahindra",
+    date: "July 2025 – November 2025",
+    desc: "Contributed to enterprise web application modules using React.js and JavaScript within an Agile SDLC. Collaborated with backend teams to integrate RESTful APIs ensuring seamless data flow across service boundaries. Participated in sprint planning, code reviews, and delivered production-ready features under senior developer mentorship. Followed industry-standard coding practices and Git workflow across distributed teams.",
+    skills: [
+      "React.js",
+      "JavaScript",
+      "REST APIs",
+      "Agile/Scrum",
+      "Git",
+      "GitHub",
+      "Code Review",
+    ],
+    impact: [],
+  },
+  {
+    id: 2,
+    img: Techpile,
+    role: "Python Full Stack Engineer (Trainee)",
+    company: "Techpile Technology Pvt. Ltd.",
+    date: "July 2023 – September 2023",
+    desc: "Built and maintained production Django REST framework modules and JavaScript components, increasing user engagement by 20%. Delivered 10+ features in collaboration with senior engineers following MVC architecture. Reduced bugs by 30% through systematic debugging and unit testing. Designed and integrated PostgreSQL databases with RESTful APIs covering complete CRUD workflows with data validation and error handling.",
+    skills: [
+      "Python",
+      "Django",
+      "REST APIs",
+      "PostgreSQL",
+      "MVC Architecture",
+      "Unit Testing",
+      "JavaScript",
+    ],
+    impact: [
+      { metric: "20%", label: "User Engagement" },
+      { metric: "30%", label: "Bug Reduction" },
+      { metric: "10+", label: "Features Shipped" },
+    ],
+  },
+];
 
-    {
-      id: 1,
-      title: "Instagram Clone Full stack",
-      description:
-         "An Instagram Clone is a full-stack social media application that allows users to log in, create posts, like, comment, and interact with other users in a responsive and engaging interface",
-      image: insta,
-      tags: ["HTML", "TailWind CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/Sakshi123-tech/Insta_backend_code",
-      webapp: "https://instagram-website-j8gw.onrender.com/",
+export const education = [
+  {
+    id: 1,
+    img: College,
+    school: "M.G.Institute of Management and Technology",
+    date: "August 2020 - July 2024",
+    grade: "8.69 CGPA",
+    desc: "Bachelor's degree in Computer Science & Engineering (AKTU). Built strong foundations in Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, and Software Engineering. Applied knowledge through multiple industry-oriented projects covering full-stack development, API design, and system design principles.",
+    degree: "B.Tech – Computer Science & Engineering",
+  },
+  {
+    id: 2,
+    img: School,
+    school: "Shri Janki Prasad Inter College, Hardoi",
+    date: "April 2019 - March 2020",
+    grade: "70.02%",
+    desc: "Class 12 with Physics, Chemistry, Mathematics, and Computer Science. Early exposure to programming concepts sparked interest in software engineering and problem-solving.",
+    degree: "U.P. Board (XII) – PCM with Computer Science",
+  },
+  {
+    id: 3,
+    img: School,
+    school: "Shri Janki Prasad Inter College, Hardoi",
+    date: "April 2017 - March 2018",
+    grade: "75%",
+    desc: "Class 10 with Science and Computer Applications. Foundation in logical reasoning and early computing concepts.",
+    degree: "U.P. Board (X) – Science with Computer Application",
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    title: "BlinkBasket – Grocery Delivery Platform",
+    description:
+      "Engineered a full-stack, production-ready grocery delivery platform using the MERN stack. Implemented secure JWT authentication, role-based access control, real-time cart management, and a scalable REST API layer. Designed MongoDB schemas with efficient indexing for high-throughput product queries. Integrated payment flow and real-time order status updates, delivering a sub-200ms API response time.",
+    image: blinkitwebsite,
+    tags: ["MERN Stack", "REST APIs", "JWT Auth", "MongoDB", "Real-Time", "Scalable Architecture"],
+    github: {
+      frontend: "https://github.com/AnweshaBhatt475/BlinkBasket.git",
+      backend: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
     },
-    {
-      id: 2,
-      title: "Recipe Finder Website",
-      description:
-        "The Recipe Finder website is a dynamic platform that helps users discover and explore recipes based on ingredients they have. It simplifies meal planning by offering tailored recipe suggestions.",
-      image: recipe,
-      tags: ["React JS", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/Sakshi123-tech/Recipe-finder-website/tree/master",
-      webapp: "https://recipe-app-five-topaz.vercel.app/",
+    webapp: "https://blinkitgrocerywebsite.onrender.com/",
+    impact: "Production-deployed, real-time order platform with secure auth and scalable APIs",
+  },
+  {
+    id: 1,
+    title: "Car Rental Platform",
+    description:
+      "Built a full-featured vehicle rental system with MERN stack featuring user authentication, vehicle browsing with filters, booking management, and admin dashboard. Engineered RESTful APIs for fleet management and reservation workflows. Implemented secure session handling and real-time availability checks to prevent double bookings.",
+    image: carrentel,
+    tags: ["MERN Stack", "REST APIs", "Admin Dashboard", "Booking System", "Auth"],
+    github: {
+      frontend: "https://github.com/AnweshaBhatt475/BlinkBasket.git",
+      backend: "https://github.com/Sakshi123-tech?tab=repositories",
     },
-    // {
-    //   id: 2,
-    //   title: "Movie Recommendation App",
-    //   description:
-    //     "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-    //   image: movierecLogo,
-    //   tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    //   github: "https://github.com/codingmastr/Movie-Recommendation-App",
-    //   webapp: "https://movie-recommendation-app-jet.vercel.app/",
-    // },
-    {
-      id: 3,
-      title: "Valentine Day web Page",
-      description:
-        "The Valentine's Day Special Website is a personalized web experience designed to celebrate love and togetherness. It allows users to create and share heartfelt messages, relationship milestones, and special moments in a beautifully themed interface.",
-      image: valentine,
-      tags: ["React JS", "CSS", "Html","Javascript"],
-      github: "https://github.com/Sakshi123-tech/velentineform",
-      webapp: "https://sprightly-paletas-d76b7d.netlify.app/",
-    },
-    {
-      id: 4,
-      title: "Expense Tracker",
-      description:
-        "The Expense Tracker is a web application designed to help users manage and track their finances efficiently. It allows users to log expenses, categorize transactions, and visualize spending patterns.",
-      image: expensetracker,
-      tags: ["JavaScript", "Reactjs", "HTML", "CSS"],
-      github: "https://github.com/Sakshi123-tech/expensetracker",
-      webapp: "https://euphonious-madeleine-c71886.netlify.app/",
-    },
-    {
-      id: 5,
-      title: "Ecommerce Website",
-      description:
-        "The E-commerce Website is a dynamic online shopping platform that allows users to browse, purchase, and manage orders seamlessly. It offers a modern shopping experience with secure transactions and a user-friendly interface..",
-      image: ecommercewebsite,
-      tags: ["HTML", "CSS", "JavaScript", "React JS"],
-      github: "https://github.com/Sakshi123-tech/Ecommerceusingreact",
-      webapp: "https://dazzling-shortbread-3d3f4d.netlify.app/",
-    },
-    {
-      id: 6,
-      title: "10 Min Zepto",
-      description:
-        "The 10-Min Zepto is a rapid delivery e-commerce platform that enables users to order groceries and essentials with guaranteed delivery within 10 minutes. This project integrates real-time order processing, inventory management, and location-based logistics.",
-      image: zepto,
-      tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
-      github: "https://github.com/Sakshi123-tech/blinkit",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Heart Care Website",
-      description:
-        "The Heart Care Website is a comprehensive healthcare platform designed to provide users with vital heart health information, appointment scheduling, and emergency assistance. It integrates real-time monitoring, doctor consultations, and personalized health recommendations to promote cardiovascular wellness.",
-      image: heartcare,
-      tags: ["Html","CSS","Javascript", "My Sql", "Python", "Django"],
-      github: "https://github.com/Sakshi123-tech/healthcare",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Password Manager",
-      description:
-        "The Password Manager is a secure web application designed to help users store, manage, and retrieve passwords safely. It ensures encrypted storage, allowing users to access their credentials anytime while maintaining security.",
-      image: passwordmanager,
-      tags: ["React JS","HTML", "CSS", "Javascript"],
-      github: "https://github.com/Sakshi123-tech/password-manager",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
-  ];  
+    webapp: "https://carrentel-7fto.onrender.com/",
+    impact: "Full-stack booking system with conflict-free reservation and admin controls",
+  },
+  {
+    id: 2,
+    title: "Instagram Clone – Social Platform",
+    description:
+      "Developed a feature-rich social media application with full authentication, post creation, like/comment systems, and user following. Built a RESTful API backend with Node.js and Express, handling media uploads, feed algorithms, and real-time notifications. Designed for horizontal scalability with efficient MongoDB query patterns.",
+    image: insta,
+    tags: ["React.js", "Node.js", "REST APIs", "MongoDB", "Auth", "Media Upload"],
+    github: "https://github.com/Sakshi123-tech/Insta_backend_code",
+    webapp: "https://instagram-website-j8gw.onrender.com/",
+    impact: "Full-stack social platform with real-time feed, auth, and media management",
+  },
+  {
+    id: 3,
+    title: "10-Min Zepto – Rapid Delivery Engine",
+    description:
+      "Architected a quick-commerce delivery platform with Python/Django backend, integrating real-time inventory management, location-based logistics, and order processing pipeline. Designed relational database schema in MySQL for product catalog, order lifecycle, and delivery tracking. Built REST APIs consumed by the frontend with sub-100ms response benchmarks.",
+    image: zepto,
+    tags: ["Python", "Django", "MySQL", "REST APIs", "Real-Time Inventory", "Location Services"],
+    github: "https://github.com/Sakshi123-tech/blinkit",
+    webapp: "https://codingmasterweb.in/",
+    impact: "Quick-commerce engine with real-time inventory sync and order tracking",
+  },
+  {
+    id: 4,
+    title: "HeartCare – Healthcare Management System",
+    description:
+      "Built a comprehensive healthcare platform enabling appointment scheduling, patient health tracking, and doctor consultation workflows. Backend engineered with Django REST framework and MySQL, featuring secure patient data handling, CRUD operations for medical records, and emergency alert systems. Implemented role-based access for doctors, patients, and admins.",
+    image: heartcare,
+    tags: ["Python", "Django", "MySQL", "RBAC", "Healthcare APIs", "Secure Data"],
+    github: "https://github.com/Sakshi123-tech/healthcare",
+    webapp: "https://imagsearch.netlify.app/",
+    impact: "Multi-role healthcare system with secure patient data and appointment engine",
+  },
+  {
+    id: 5,
+    title: "Password Manager – Secure Vault",
+    description:
+      "Designed and implemented a client-side encrypted password vault using React.js. Implemented AES encryption for credential storage, secure key management, and a clean credential retrieval interface. Focused on security-first architecture ensuring zero plaintext credential exposure in storage or transport layers.",
+    image: passwordmanager,
+    tags: ["React.js", "AES Encryption", "Security", "Local Storage", "Secure Auth"],
+    github: "https://github.com/Sakshi123-tech/password-manager",
+    webapp: "https://removeyourbg.netlify.app/",
+    impact: "Security-first credential vault with client-side AES encryption",
+  },
+  {
+    id: 6,
+    title: "E-Commerce Platform",
+    description:
+      "Engineered a dynamic e-commerce platform with product catalog management, cart system, and checkout flow. Built reusable React component architecture with Redux for global state management. Implemented API integration for product data, filter/search functionality, and order management workflow.",
+    image: ecommercewebsite,
+    tags: ["React.js", "Redux", "REST APIs", "Cart Management", "State Architecture"],
+    github: "https://github.com/Sakshi123-tech/Ecommerceusingreact",
+    webapp: "https://dazzling-shortbread-3d3f4d.netlify.app/",
+    impact: "Scalable e-commerce UI with Redux state management and API integration",
+  },
+];
+
+export const achievements = [
+  {
+    id: 0,
+    icon: "🚀",
+    title: "35% Latency Reduction",
+    description: "Integrated Socket.IO real-time sync at Coreshield Technologies, reducing data synchronization latency by 35% across production systems.",
+    category: "Performance Engineering",
+  },
+  {
+    id: 1,
+    icon: "⚡",
+    title: "25% Page Performance Boost",
+    description: "Implemented code splitting, lazy loading, and bundle optimization strategies resulting in 25% faster page load times in production.",
+    category: "Optimization",
+  },
+  {
+    id: 2,
+    icon: "🛡️",
+    title: "Enterprise Security Implementation",
+    description: "Implemented OWASP Top 10 security practices including XSS prevention, secure JWT authentication, and input sanitization across production apps.",
+    category: "Security Engineering",
+  },
+  {
+    id: 3,
+    icon: "📦",
+    title: "30% Bug Reduction",
+    description: "Applied systematic debugging, unit testing, and code review processes that reduced production bugs by 30% during internship at Techpile.",
+    category: "Code Quality",
+  },
+  {
+    id: 4,
+    icon: "🏗️",
+    title: "LLD & Clean Architecture",
+    description: "Applied Low Level Design (LLD) principles for modular, maintainable component architecture that reduced coupling by 40% across the codebase.",
+    category: "System Design",
+  },
+  {
+    id: 5,
+    icon: "📊",
+    title: "8.69 CGPA – B.Tech CSE",
+    description: "Graduated with distinction from M.G.I.M.T. (AKTU) with 8.69 CGPA in Computer Science & Engineering, excelling in DSA, OS, DBMS, and Networks.",
+    category: "Academic Excellence",
+  },
+];

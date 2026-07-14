@@ -1,83 +1,56 @@
-import React from "react";
-import { education } from "../../constants"; // Import the education data
+import React from 'react';
+import { motion } from 'framer-motion';
+import { education } from '../../constants';
 
-const Education = () => {
-  return (
-    <section
-      id="education"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
-    >
-      {/* Section Title */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
-          My education has been a journey of learning and development. Here are the details of my academic background
-        </p>
-      </div>
+const fadeUp = {
+  hidden: { opacity: 0, y: 45 },
+  visible: (i = 0) => ({
+    opacity: 1, y: 0,
+    transition: { duration: 0.65, delay: i * 0.12, ease: [0.25, 0.1, 0.25, 1] },
+  }),
+};
 
-      {/* Education Timeline */}
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+const Education = () => (
+  <section id="education" className="relative py-24 px-6 md:px-10 lg:px-16 overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-t from-white via-purple-50 to-indigo-50 pointer-events-none" />
+    <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+      style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.1) 0%, transparent 70%)', filter: 'blur(80px)' }} />
 
-        {/* Education Entries */}
-        {education.map((edu, index) => (
-          <div
-            key={edu.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
-            }`}
-          >
-            {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
-              <img
-                src={edu.img}
-                alt={edu.school}
-                className="w-full h-full object-cover rounded-full"
-              />
+    <div className="relative max-w-4xl mx-auto">
+      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
+        className="text-center mb-16">
+        <p className="section-tag mb-3">Academic Background</p>
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Education</h2>
+        <div className="section-divider mx-auto" />
+      </motion.div>
+
+      <div className="flex flex-col gap-6">
+        {education.map((edu, i) => (
+          <motion.div key={edu.id}
+            custom={i} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-50px' }}
+            whileHover={{ y: -3 }}
+            className="glass-card rounded-2xl p-6 flex flex-col sm:flex-row gap-5">
+            {/* Logo */}
+            <div className="w-16 h-16 flex-shrink-0 rounded-xl bg-white border border-gray-100 shadow-sm overflow-hidden">
+              <img src={edu.img} alt={edu.school} className="w-full h-full object-cover" />
             </div>
-
-            {/* Content Section */}
-            <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
-            >
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-6">
-                {/* School Logo/Image */}
-                <div className="w-24 h-16 bg-white rounded-md overflow-hidden">
-                  <img
-                    src={edu.img}
-                    alt={edu.school}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Degree, School Name, and Date */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-xl font-semibold text-white">
-                      {edu.degree}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {edu.school}
-                    </h4>
-                  </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{edu.date}</p>
-                </div>
+            {/* Info */}
+            <div className="flex-1">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                <h3 className="font-bold text-gray-900 text-base">{edu.degree}</h3>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-purple-50 border border-purple-100 text-purple-700 text-sm font-bold flex-shrink-0">
+                  🎓 {edu.grade}
+                </span>
               </div>
-
-              <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
-              <p className="mt-4 text-gray-400">{edu.desc}</p>
+              <p className="text-purple-600 font-medium text-sm mb-1">{edu.school}</p>
+              <p className="text-gray-400 text-xs font-mono mb-3">{edu.date}</p>
+              <p className="text-gray-500 text-sm leading-relaxed">{edu.desc}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Education;
