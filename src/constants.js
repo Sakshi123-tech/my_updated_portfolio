@@ -23,7 +23,7 @@ import blinkitwebsite from './assets/tech_logo/Blinkitwebsite.jpg';
 
 // Experience Section Logo's
 import Techpile from './assets/company_logo/Techpile.jpg';
-import Coreshield from './assets/company_logo/Coreshield.png';
+import Coreshield from './assets/company_logo/coreshield.png';
 import TechMahindraLogo from './assets/company_logo/techmahindra.png';
 
 // Education Section Logo's
