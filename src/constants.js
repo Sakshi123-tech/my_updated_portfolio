@@ -28,7 +28,7 @@ import TechMahindraLogo from './assets/company_logo/techmahindra.png';
 
 // Education Section Logo's
 import College from './assets/education_logo/College.jpg';
-import School from './assets/education_logo/school.jpeg';
+import School from './assets/education_logo/School.jpeg';
 
 // Project Section Logo's
 import insta from './assets/work_logo/instagram.jpg';
@@ -89,7 +89,7 @@ export const experiences = [
   {
     id: 0,
     img: Coreshield,
-    role: "Software Development Engineer (SDE)",
+    role: "Software Development Engineer (SDE)-1",
     company: "Coreshield Technologies",
     date: "August 2025 – Present",
     desc: "Lead end-to-end development of production-grade web applications using React.js and Node.js. Architect scalable REST APIs and implement OWASP Top 10 security standards including XSS prevention and secure JWT authentication. Integrated Socket.IO for real-time data sync, reducing latency by 35%. Containerized services with Docker and applied Low Level Design (LLD) principles improving maintainability and reducing bug surface by 40%. Improved page performance by 25% through code splitting, lazy loading, and bundle optimization.",

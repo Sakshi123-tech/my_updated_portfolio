@@ -35,7 +35,7 @@ const Footer = () => (
             </div>
             <div>
               <div className="font-bold text-gray-900 text-sm">Sakshi Agnihotri</div>
-              <div className="text-xs text-purple-500 font-mono">Software Development Engineer</div>
+              <div className="text-xs text-purple-500 font-mono">Software Development Engineer-1</div>
             </div>
           </div>
           <p className="text-gray-500 text-sm leading-relaxed">

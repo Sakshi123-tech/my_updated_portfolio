@@ -63,7 +63,7 @@ const Navbar = () => {
           </div>
           <div className="text-left hidden sm:block">
             <div className="text-sm font-semibold text-gray-800 leading-none">Sakshi Agnihotri</div>
-            <div className="text-xs text-purple-500 font-mono mt-0.5">SDE</div>
+            <div className="text-xs text-purple-500 font-mono mt-0.5">SDE1</div>
           </div>
         </motion.button>
 

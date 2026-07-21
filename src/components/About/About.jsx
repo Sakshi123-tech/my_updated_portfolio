@@ -97,7 +97,7 @@ const badges = [
 ];
 
 const roles = [
-  'Software Development Engineer',
+  'Software Development Engineer-1',
   'Full-Stack Systems Builder',
   'Backend Architecture Designer',
   'API & Performance Engineer',
@@ -155,14 +155,7 @@ const About = () => {
           {/* LEFT: Text */}
           <div className="lg:w-[55%] text-center lg:text-left">
 
-            {/* Status */}
-            <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible"
-              className="inline-flex items-center gap-2 mb-6">
-              <span className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-200 text-green-700 text-sm font-medium">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                Open to SDE Opportunities
-              </span>
-            </motion.div>
+           
 
             {/* Name */}
             <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
@@ -187,7 +180,7 @@ const About = () => {
             {/* SDE tag */}
             <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible" className="mb-5">
               <span className="inline-block px-4 py-1.5 rounded-md text-xs font-mono font-semibold tracking-widest bg-purple-50 border border-purple-200 text-purple-600">
-                SOFTWARE DEVELOPMENT ENGINEER
+                SOFTWARE DEVELOPMENT ENGINEER-1
               </span>
             </motion.div>
 
