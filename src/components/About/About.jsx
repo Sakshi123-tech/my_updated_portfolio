@@ -206,7 +206,7 @@ const About = () => {
             <motion.div custom={7} variants={fadeUp} initial="hidden" animate="visible"
               className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
               <motion.a whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
-                href="https://drive.google.com/file/d/1FJ-SqWtzOspF6c7sRFzmqP5MUgxmCt62/view?usp=sharing"
+                href="https://drive.google.com/file/d/1QSkWMfDaLNcWz_U3E26rrnc4UFi-a5JI/view"
                 target="_blank" rel="noopener noreferrer" className="btn-primary">
                 <span className="flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

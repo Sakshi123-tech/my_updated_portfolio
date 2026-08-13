@@ -104,7 +104,7 @@ const Navbar = () => {
           <motion.a
             whileHover={{ scale: 1.04, y: -1 }}
             whileTap={{ scale: 0.97 }}
-            href="https://drive.google.com/file/d/1FJ-SqWtzOspF6c7sRFzmqP5MUgxmCt62/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QSkWMfDaLNcWz_U3E26rrnc4UFi-a5JI/view"
             target="_blank" rel="noopener noreferrer"
             className="btn-primary ml-1 text-sm py-2 px-5"
           >
@@ -145,7 +145,7 @@ const Navbar = () => {
                   className="text-gray-500 hover:text-gray-800 p-2"><FaGithub size={18} /></a>
                 <a href="https://www.linkedin.com/in/sakshi-agnihotri-64613a263" target="_blank" rel="noopener noreferrer"
                   className="text-gray-500 hover:text-blue-600 p-2"><FaLinkedin size={18} /></a>
-                <a href="https://drive.google.com/file/d/1FJ-SqWtzOspF6c7sRFzmqP5MUgxmCt62/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1QSkWMfDaLNcWz_U3E26rrnc4UFi-a5JI/view"
                   target="_blank" rel="noopener noreferrer"
                   className="ml-auto btn-primary text-sm py-2 px-4">
                   <span>Resume</span>

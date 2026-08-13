@@ -42,6 +42,7 @@ import ImageSearchwebsite from './assets/work_logo/searchimage.png';
 
 import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
 import carrentel from "./assets/work_logo/car rentel.png";
+import aiAttendance from './assets/work_logo/AI-attendace.png';
 
 
 export const SkillsInfo = [
@@ -184,6 +185,63 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 'attendance',
+    title: "AI-Powered Smart Attendance & Access Management System",
+    description: "Production-deployed full-stack attendance and access management platform designed to automate employee onboarding, role-based access control, kiosk operations, facial-recognition attendance, reporting, and administrative workflows.",
+    image: aiAttendance,
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "Socket.IO", "Face-api.js", "Nodemailer", "Tailwind CSS", "Docker", "Vercel", "Render", "MongoDB Atlas"],
+    github: "https://github.com/Sakshi123-tech/attendance-marker",
+    webapp: "https://attendance-marker-tawny.vercel.app/login",
+    impact: "Production Deployed",
+    documentation: "https://docs.google.com/document/d/1K35awCvTibkX04KvUKGISaLsuSEDysHuh5vDwIZd4q0/edit?tab=t.0#heading=h.6fekl5x5v875",
+    documentationSectionLink: "https://drive.google.com/file/d/1QSkWMfDaLNcWz_U3E26rrnc4UFi-a5JI/view",
+    demoVideo: "https://drive.google.com/file/d/1io5MLvRuRZ0GKLIjIF26JqAPqgkrfJCW/view?t=129.04",
+    detailed: true,
+    keyFeatures: [
+      { title: "Secure Authentication", desc: "JWT-based authentication using HttpOnly cookies with backend token verification." },
+      { title: "Role-Based Access Control", desc: "Five supported roles: SUPER_ADMIN, ADMIN, HR, EMPLOYEE, KIOSK. Authorization is enforced at the backend level." },
+      { title: "Employee Management", desc: "Role-controlled employee creation, management, activation and deactivation." },
+      { title: "Employee Onboarding", desc: "Email-based employee onboarding and account setup workflow." },
+      { title: "Face Registration", desc: "Facial-recognition registration as part of the attendance workflow." },
+      { title: "Kiosk Management", desc: "Registered kiosk/device validation using kiosk identity and authentication credentials." },
+      { title: "Attendance Management", desc: "Kiosk-based attendance marking with validation and duplicate-attendance prevention." },
+      { title: "Real-Time Updates", desc: "Socket.IO-based real-time application updates and notifications." },
+      { title: "Reporting", desc: "Attendance statistics and scheduled attendance reporting workflows." },
+      { title: "Audit & System Logging", desc: "Logging of important administrative and system activities." }
+    ],
+    architecture: {
+      flow: ["React.js Frontend", "Express.js REST API", "Authentication / Authorization Middleware", "Controllers", "Services / Business Logic", "Mongoose", "MongoDB"],
+      supporting: ["Socket.IO", "Cron Jobs", "Email Service", "Kiosk Authentication"]
+    },
+    security: ["JWT Authentication", "HttpOnly Cookies", "Secure Cookies in Production", "SameSite Cookie Protection", "Backend Authentication Middleware", "Role-Based Authorization", "CORS", "Helmet Security Headers", "Rate Limiting", "Input Validation", "Kiosk Authentication", "Account Activation Checks", "Centralized Error Handling"],
+    highlights: [
+      "Modular Node.js / Express backend architecture designed to support future scalability.",
+      "REST API design",
+      "JWT authentication",
+      "Backend-enforced RBAC",
+      "MongoDB / Mongoose data modeling",
+      "Socket.IO real-time communication",
+      "Kiosk/device validation",
+      "Scheduled backend jobs",
+      "Centralized error handling",
+      "API rate limiting",
+      "Docker / Docker Compose development environment",
+      "Production deployment"
+    ],
+    challenges: [
+      { title: "Production Authentication", desc: "Handling authentication between a separately deployed Vercel frontend and Render backend using secure cookies, CORS, HTTPS and credentials." },
+      { title: "Backend Authorization", desc: "Enforcing authorization at the API level rather than relying only on frontend route protection." },
+      { title: "Kiosk Security", desc: "Adding device-level validation to control access to kiosk functionality." },
+      { title: "Real-Time Communication", desc: "Using Socket.IO to provide live application updates without relying entirely on manual page refreshes." }
+    ],
+    deployment: {
+      frontend: "Vercel",
+      backend: "Render",
+      database: "MongoDB Atlas",
+      development: "Docker / Docker Compose"
+    }
+  },
   {
     id: 0,
     title: "BlinkBasket – Grocery Delivery Platform",

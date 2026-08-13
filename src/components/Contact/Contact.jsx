@@ -71,7 +71,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-700">Location</p>
-                    <p className="text-gray-500">Lucknow, Uttar Pradesh, India</p>
+                    <p className="text-gray-500">New Delhi, India</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-600">
@@ -80,7 +80,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-700">Email</p>
-                    <p className="text-gray-500">Open to SDE roles</p>
+                    <p className="text-gray-500">sakshiagnihotri@example.com</p>
                   </div>
                 </div>
               </div>
