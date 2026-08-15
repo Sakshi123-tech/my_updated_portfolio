@@ -16,7 +16,7 @@ const links = [
 const socials = [
   { icon: <FaGithub size={18} />, href: 'https://github.com/Sakshi123-tech', label: 'GitHub' },
   { icon: <FaLinkedin size={18} />, href: 'https://www.linkedin.com/in/sakshi-agnihotri-64613a263', label: 'LinkedIn' },
-  { icon: <FaEnvelope size={18} />, href: 'mailto:sakshiagnihotri@example.com', label: 'Email' },
+  { icon: <FaEnvelope size={18} />, href: 'mailto:agnihotrisakshi256@@example.com', label: 'Email' },
 ];
 
 const Footer = () => (

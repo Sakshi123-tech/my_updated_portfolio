@@ -16,7 +16,7 @@ const fadeUp = {
 const socials = [
   { icon: <FaGithub size={20} />, label: 'GitHub', href: 'https://github.com/Sakshi123-tech', color: 'hover:text-gray-900 hover:border-gray-300' },
   { icon: <FaLinkedin size={20} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sakshi-agnihotri-64613a263', color: 'hover:text-blue-600 hover:border-blue-300' },
-  { icon: <FaEnvelope size={20} />, label: 'Email', href: 'mailto:sakshiagnihotri@example.com', color: 'hover:text-red-500 hover:border-red-300' },
+  { icon: <FaEnvelope size={20} />, label: 'Email', href: 'mailto:agnihotrisakshi256@example.com', color: 'hover:text-red-500 hover:border-red-300' },
 ];
 
 const Contact = () => {
