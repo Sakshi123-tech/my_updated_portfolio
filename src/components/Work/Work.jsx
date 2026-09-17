@@ -14,7 +14,7 @@ const fadeUp = {
 const Work = () => {
   const [selected, setSelected] = useState(null);
 
-  const featured = projects.slice(0, 6);
+  const featured = projects;
 
   return (
     <section id="work" className="relative py-24 px-6 md:px-10 lg:px-16 overflow-hidden">

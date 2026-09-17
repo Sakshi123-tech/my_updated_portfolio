@@ -13,7 +13,7 @@ const menuItems = [
   { id: 'contact', label: 'Contact' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ onNavigateRoom }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -93,6 +93,16 @@ const Navbar = () => {
 
         {/* Right CTA */}
         <div className="hidden lg:flex items-center gap-2">
+          {onNavigateRoom && (
+            <motion.button
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.96 }}
+              onClick={onNavigateRoom}
+              className="px-3.5 py-1.5 rounded-full bg-slate-900 text-white font-mono text-xs font-semibold hover:bg-violet-700 transition-all flex items-center gap-1.5 shadow-sm"
+            >
+              <span>🚀 3D Room</span>
+            </motion.button>
+          )}
           <a href="https://github.com/Sakshi123-tech" target="_blank" rel="noopener noreferrer"
             className="p-2 rounded-lg text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-all">
             <FaGithub size={19} />
@@ -130,6 +140,18 @@ const Navbar = () => {
             className="absolute top-full left-4 right-4 mt-2 rounded-2xl bg-white/95 backdrop-blur-xl border border-purple-100 shadow-xl lg:hidden overflow-hidden"
           >
             <div className="p-3 flex flex-col gap-1">
+              {onNavigateRoom && (
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    onNavigateRoom();
+                  }}
+                  className="text-left px-4 py-3 rounded-xl text-sm font-semibold bg-slate-900 text-white flex items-center justify-between"
+                >
+                  <span>🚀 3D Workspace Room</span>
+                  <span className="text-xs bg-violet-600 px-2 py-0.5 rounded-full">Interactive</span>
+                </button>
+              )}
               {menuItems.map((item) => (
                 <button key={item.id} onClick={() => scrollTo(item.id)}
                   className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all ${

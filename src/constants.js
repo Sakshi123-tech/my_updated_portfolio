@@ -36,11 +36,7 @@ import recipe from './assets/work_logo/RecipeApp.png';
 import expensetracker from './assets/work_logo/ExpenseTracker.jpg';
 import valentine from './assets/work_logo/valentine.png';
 import ecommercewebsite from './assets/work_logo/ecommercewebsite.jpg';
-import zepto from './assets/work_logo/10MinZepto.jpg';
-import heartcare from './assets/work_logo/Hearcare.jpg';
 import ImageSearchwebsite from './assets/work_logo/searchimage.png';
-
-import passwordmanager from './assets/work_logo/Passwordmanager.jpg';
 import carrentel from "./assets/work_logo/car rentel.png";
 import aiAttendance from './assets/work_logo/AI-attendace.png';
 
@@ -283,36 +279,14 @@ export const projects = [
   },
   {
     id: 3,
-    title: "10-Min Zepto – Rapid Delivery Engine",
+    title: "Image Search Engine & Gallery",
     description:
-      "Architected a quick-commerce delivery platform with Python/Django backend, integrating real-time inventory management, location-based logistics, and order processing pipeline. Designed relational database schema in MySQL for product catalog, order lifecycle, and delivery tracking. Built REST APIs consumed by the frontend with sub-100ms response benchmarks.",
-    image: zepto,
-    tags: ["Python", "Django", "MySQL", "REST APIs", "Real-Time Inventory", "Location Services"],
-    github: "https://github.com/Sakshi123-tech/blinkit",
-    webapp: "https://codingmasterweb.in/",
-    impact: "Quick-commerce engine with real-time inventory sync and order tracking",
-  },
-  {
-    id: 4,
-    title: "HeartCare – Healthcare Management System",
-    description:
-      "Built a comprehensive healthcare platform enabling appointment scheduling, patient health tracking, and doctor consultation workflows. Backend engineered with Django REST framework and MySQL, featuring secure patient data handling, CRUD operations for medical records, and emergency alert systems. Implemented role-based access for doctors, patients, and admins.",
-    image: heartcare,
-    tags: ["Python", "Django", "MySQL", "RBAC", "Healthcare APIs", "Secure Data"],
-    github: "https://github.com/Sakshi123-tech/healthcare",
+      "Engineered a responsive image search and discovery platform integrating Unsplash REST APIs. Built with React.js featuring real-time debounce search, dynamic masonry image layout, modal previews, and high-resolution asset downloads.",
+    image: ImageSearchwebsite,
+    tags: ["React.js", "REST APIs", "Unsplash API", "Responsive UI", "Async State"],
+    github: "https://github.com/Sakshi123-tech?tab=repositories",
     webapp: "https://imagsearch.netlify.app/",
-    impact: "Multi-role healthcare system with secure patient data and appointment engine",
-  },
-  {
-    id: 5,
-    title: "Password Manager – Secure Vault",
-    description:
-      "Designed and implemented a client-side encrypted password vault using React.js. Implemented AES encryption for credential storage, secure key management, and a clean credential retrieval interface. Focused on security-first architecture ensuring zero plaintext credential exposure in storage or transport layers.",
-    image: passwordmanager,
-    tags: ["React.js", "AES Encryption", "Security", "Local Storage", "Secure Auth"],
-    github: "https://github.com/Sakshi123-tech/password-manager",
-    webapp: "https://removeyourbg.netlify.app/",
-    impact: "Security-first credential vault with client-side AES encryption",
+    impact: "High-resolution media search engine with real-time API queries and responsive grid",
   },
   {
     id: 6,
