@@ -246,7 +246,7 @@ export const projects = [
     image: blinkitwebsite,
     tags: ["MERN Stack", "REST APIs", "JWT Auth", "MongoDB", "Real-Time", "Scalable Architecture"],
     github: {
-      frontend: "https://github.com/AnweshaBhatt475/BlinkBasket.git",
+      frontend: "https://github.com/Sakshi123-tech/blinkitfullstackfrontend",
       backend: "https://github.com/Sakshi123-tech/binkitFullstackBackend",
     },
     webapp: "https://blinkitgrocerywebsite.onrender.com/",
@@ -260,7 +260,7 @@ export const projects = [
     image: carrentel,
     tags: ["MERN Stack", "REST APIs", "Admin Dashboard", "Booking System", "Auth"],
     github: {
-      frontend: "https://github.com/AnweshaBhatt475/BlinkBasket.git",
+      frontend: "https://github.com/Sakshi123-tech/car_rentel_frontend_code",
       backend: "https://github.com/Sakshi123-tech?tab=repositories",
     },
     webapp: "https://carrentel-7fto.onrender.com/",
