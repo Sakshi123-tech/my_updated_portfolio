@@ -15,9 +15,8 @@ const App = () => {
   // Check initial route / hash
   const [currentView, setCurrentView] = useState(() => {
     if (typeof window !== "undefined") {
-      const path = window.location.pathname;
       const hash = window.location.hash;
-      if (path.includes("/portfolio") || hash.includes("#portfolio")) {
+      if (hash.includes("#portfolio")) {
         return "portfolio";
       }
     }
@@ -26,37 +25,28 @@ const App = () => {
 
   // Listen for browser back / forward navigation
   useEffect(() => {
-    const handlePopState = () => {
-      const path = window.location.pathname;
+    const handleHashChange = () => {
       const hash = window.location.hash;
-      if (path.includes("/portfolio") || hash.includes("#portfolio")) {
+      if (hash.includes("#portfolio")) {
         setCurrentView("portfolio");
       } else {
         setCurrentView("room");
       }
     };
 
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
   const navigateToPortfolio = () => {
     setCurrentView("portfolio");
-    try {
-      window.history.pushState({}, "", "/portfolio");
-    } catch {
-      window.location.hash = "#portfolio";
-    }
+    window.location.hash = "#portfolio";
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const navigateToRoom = () => {
     setCurrentView("room");
-    try {
-      window.history.pushState({}, "", "/");
-    } catch {
-      window.location.hash = "";
-    }
+    window.location.hash = "";
   };
 
   // If in 3D Room view
